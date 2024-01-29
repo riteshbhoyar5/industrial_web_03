@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* header section start */
+
+header{
+    width: 100%;
+    height: 40px;
+    background-color: #02207C;
+    padding: 0px 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+
+/* header section end */
+
+/* banner section start */
+
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+                     url("../img/industrial_02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    align-items: center;
+}
+
+.banner h1{
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.banner h1 span{
+    display: block;
+    font-size: 55px; 
+    font-weight: 550;
+}
+
+/* form section start */
+
+.banner aside{
+    background-color: #02207C;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+.banner aside input[type],
+.banner aside textarea,
+.banner aside button{
+    width: 100%;
+    height: 30px;
+    margin: 7px;
+}
+
+.banner aside input[placeholder]{
+    text-align: center;
+}
+
+/* form section end */
+
+/* banner section end */
+
+/* feature section start */
+
+.feature{
+    width: 100%;
+    height: auto;
+    color: blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 100px;
+}
+
+.feature div{
+    width: 30%;
+    height: 400px;
+}
+
+.feature div img{
+    width: 400px;
+    height: 250px;
+}
+
+.feature div h2{
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.feature div p{
+    margin-top: 6px;
+    font-size: 16px;
+    text-align: left;
+    width: 400px;
+}
+
+/* feature section end */
+
+/* about section start */
+
+.about{
+    width: 100%;
+    height: auto;
+    padding: 50px 350px;
+    background-color: #02207C;
+    color: white;
+    text-align: center;
+}
+
+.about h2{
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.about p{
+    font-size: 16px;
+}
+
+.about button{
+    color: white;
+    background-color: #02207C;
+    font-weight: bold;
+    border: 2px solid white;
+    margin-top: 20px;
+    padding: 10px 100px;
+    border-radius: 5px;
+}
+
+/* about section end */
+
+/* detail section start */
+
+.detail{
+    width: 100%;
+    height: auto;
+    padding: 0px 100px;
+}
+
+.detail .upper, .detail .lower{
+    display: flex;
+    align-items: center;
+}
+
+.detail .image, .detail .content{
+    width: 50%;
+}
+
+.detail .image img{
+    width: 660px;
+    height: 350px;
+}
+
+/* detail section end */
+
+/* footer section start */
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 20px 100px;
+    text-align: center;
+    color: white;
+    background-color: #02207C;
+}
+
+/* footer section end */
+
+
+/* media query start */
+
+@media screen and (max-width:991px){
+
+    header{
+        padding: 10px;
+    }
+
+    header h2{
+        font-size: 13px;
+    }
+
+    .banner{
+        padding: 0px;
+        flex-direction: column;
+    }
+
+    .feature{
+        padding: 50px 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature div img,
+    .feature div p,
+    .feature div h2{
+        margin-left: -57%;
+    }
+
+    .feature div{
+        width: 30%;
+        height: 450px;
+    }
+
+    .about{
+        padding: 20px;
+    }
+
+    .detail{
+        padding: 20px;
+    }
+
+    .detail .upper,
+    .detail .lower{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detail .image,
+    .detail .content,
+    detail .content h2{
+        width: auto;
+        padding-left: 0px !important;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    header h2{
+        font-size: 12px;
+    }
+
+    header h2 span{
+        font-size: 10px;
+        text-wrap: nowrap;
+    }
+
+    .banner{
+        height: auto;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .banner h1{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .banner h1 span{
+        font-size: 40px;
+    }
+}
+
+/* media query end */
